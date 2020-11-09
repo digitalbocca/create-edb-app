@@ -1,0 +1,33 @@
+{
+  "name": "@digitalbocca/create-edb-app",
+  "version": "0.2.0",
+  "description": "Iniciador de projetos do Estudio Digital Bocca",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digitalbocca/create-edb-app.git"
+  },
+  "keywords": [
+    "create",
+    "edb",
+    "inicializador",
+    "edb-app"
+  ],
+  "author": "Gabriel Bertola Bocca - gabriel at estudiodigitalbocca.com.br",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/digitalbocca/create-edb-app/issues"
+  },
+  "homepage": "https://github.com/digitalbocca/create-edb-app#readme",
+  "devDependencies": {
+    "standard": "^16.0.1"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^6.2.0",
+    "degit": "^2.8.0"
+  }
+}
