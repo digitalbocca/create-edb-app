@@ -1,6 +1,6 @@
 {
   "name": "@digitalbocca/create-edb-app",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Iniciador de projetos do Estudio Digital Bocca",
   "main": "src/index.js",
   "bin": "./src/index.js",

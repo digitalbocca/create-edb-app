@@ -5,7 +5,7 @@ const degit = require('degit')
 const chalk = require('chalk')
 const path = require('path')
 
-program.version('0.5.0')
+program.version('0.6.0')
 
 program.arguments('<starter> [pasta]')
 
@@ -18,7 +18,7 @@ program.action(async (starter, pasta) => {
   try {
     console.log(chalk.yellow('Cortesia do Estúdio Digital Bocca'))
     console.log(chalk.green('Localizando Arquivos...'))
-    const emmiter = degit(`digitalbocca/edb-${starter}`, {
+    const emmiter = degit(`digitalbocca/edb-${starter}#main`, {
       cache: false,
       force: true,
       verbose: true
