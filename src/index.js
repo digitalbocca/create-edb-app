@@ -5,7 +5,7 @@ const degit = require('degit')
 const chalk = require('chalk')
 const path = require('path')
 
-program.version('0.6.0')
+program.version('0.7.0')
 
 program.arguments('<starter> [pasta]')
 
@@ -18,7 +18,12 @@ program.action(async (starter, pasta) => {
   try {
     console.log(chalk.yellow('Cortesia do Estúdio Digital Bocca'))
     console.log(chalk.green('Localizando Arquivos...'))
-    const emmiter = degit(`digitalbocca/edb-${starter}#main`, {
+
+    const starterName = () => {
+      return starter === 'electron-vue3' ? `digitalbocca/electron-vue3#main` : `digitalbocca/edb-${starter}#main`
+    }
+
+    const emmiter = degit(starterName(), {
       cache: false,
       force: true,
       verbose: true
