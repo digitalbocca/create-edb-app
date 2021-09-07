@@ -5,7 +5,7 @@ const degit = require('degit')
 const chalk = require('chalk')
 const path = require('path')
 
-program.version('0.7.0')
+program.version('0.8.0')
 
 program.arguments('<starter> [pasta]')
 
